@@ -2,7 +2,7 @@ $(document).ready(function(){
   //ocultar main
     $("main").slideUp(4000);
 
-    var restaurante = data[0,"name"];
+    var restaurante = data.([0]name);
     console.log("restaurante");
 
 
