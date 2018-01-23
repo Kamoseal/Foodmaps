@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodmap</title>
+  </head>
+  <body>
+    <head id="welcome" class="container-fluid text-center back-color-foodMap">
+      <h3 class="display-4 color-orange">Foodmap</h3>
+    </head>
+    <section id="foodMap" class="container-fluid text-center">
+      <h3 class="text-center">Foodmap</h3>
+      <hr my-1>
+      <div class="border p-1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120233.11561145537!2d-99.29581281470213!3d19.657848652342885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21dd4afab4267%3A0xce8d74d9edb4d88!2zQ3VhdXRpdGzDoW4gSXpjYWxsaSwgTcOpeC4!5e0!3m2!1ses!2smx!4v1516693373034" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <h4>Comida cerca de ti</h4>
+      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button class="btn btn-outline-secondary" type="button">Button</button>
+      </div>
+      <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+    </div>
+    <article class="container-fluid">
+      <button type="button" class="btn size-border mg-3 col-3" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img src="https://dummyimage.com/300x300" alt=""></button>
+      <button type="button" class="btn size-border mg-3 col-3" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><img src="https://dummyimage.com/300x300" alt=""></button>
+      <button type="button" class="btn size-border mg-3 col-3" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><img src="https://dummyimage.com/300x300" alt=""></button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn size-border mg-3 col-3" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img src="https://dummyimage.com/300x300" alt=""></button>
+      <button type="button" class="btn size-border mg-3 col-3" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat"><img src="https://dummyimage.com/300x300" alt=""></button>
+      <button type="button" class="btn size-border mg-3 col-3" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><img src="https://dummyimage.com/300x300" alt=""></button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    </section>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    </body>
+  </html>
