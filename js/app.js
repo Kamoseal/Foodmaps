@@ -2,11 +2,10 @@
 $(document).ready(function(){
   //ocultar main
     $("main").slideUp(4000);
-
     //Creando Elementos
-  function printData() {
+
     for (var i in data) {
-      
+
       var $contenetRestaurant = $("<div />");
       var $titleRestaurant = $("<h2 />");
       var $sheduleRestaurant = $("<p />");
@@ -16,18 +15,30 @@ $(document).ready(function(){
       var $shedule = data[i].horarios;
       var $price = data[i].precios;
 
-      titleRestaurant.text(title);
-      sheduleRestaurant.text(shedule);
-      priceRestaurant.text(price);
+      $titleRestaurant.append($title);
+      $sheduleRestaurant.append($shedule);
+      $priceRestaurant.append($price);
 
-      console.log("titleRestaurant.text(title)");
       $("#restaurant").append($contenetRestaurant)
       $contenetRestaurant.append($titleRestaurant);
       $contenetRestaurant.append($sheduleRestaurant);
       $contenetRestaurant.append($priceRestaurant);
 
-  }
+    }
 
+
+    // var $filtroRestaurant = $("input[name='filter']").val();
+
+    $("#filter").keyup(search);
+
+    function search () {
+      var $filtroRestaurant = $("#filter").val();
+      // for (var i = 0; i < titleRestaurant.length; i++) {
+      //   array[i]
+      // }
+    }
+    console.log($title);
+  })
 
   // var x = $("#foodOne").a7}ttr("data[i]");
 
@@ -47,18 +58,3 @@ $(document).ready(function(){
   //
   //   $("#exampleModal").html(objRestaurantList);
   // })
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-})
