@@ -29,10 +29,15 @@ $(document).ready(function(){
 
     // var $filtroRestaurant = $("input[name='filter']").val();
 
-    $("#filter").keyup(search);
+    $("#filter").keyup(function() {
+      var $filtroRestaurant = $("#filter").val().trim()toUpperCase;
+      for (var i in $filtroRestaurant) {
 
-    function search () {
-      var $filtroRestaurant = $("#filter").val();
+
+        }
+      })
+
+
       // for (var i = 0; i < titleRestaurant.length; i++) {
       //   array[i]
       // }
